@@ -1,0 +1,566 @@
+.cuerpo{
+    background-color: #f5ebd4;
+    font-family: 'Poppins', sans-serif !important; 
+}
+
+h3{
+    text-align: center;
+    margin-top: 50px;
+}
+.barradenavegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    animation-timeline: scroll();
+    animation-range: 0 200px;
+    z-index: 10;
+    background-color: #f5ebd4;
+    border-bottom: 1px solid #a05c1c;
+}
+.links{
+    text-decoration: none;
+    color: #935115;
+    justify-content: space-between;
+}
+.links:hover{
+    color: #a05c1c;
+    font-weight: bold;
+}
+.buycar{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.logobuycar{
+    height: 35px;
+    width: 40px;
+}
+.botoniniciarsesion{
+    background-color: #714212;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+}
+.botoniniciarsesion:hover{
+    background-color: #884f17;
+}
+.botoniniciarsesion:visited{
+    color: white;
+}
+.marca{
+    display: flex;
+    align-items: center;
+    
+}
+.logonav{
+    height: 75px;
+    width: 100px;
+    object-fit:contain;
+    object-position: center;
+}
+.subpaginas{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+.pago{
+    margin: 0px;
+}
+.espacioboton{
+    padding: 20px;
+    margin-bottom: 0px;
+    text-align: right;
+}
+@media (max-width: 400px) {
+    #cartTable{
+        size-adjust: auto;
+    }
+}
+.espaciocarro{
+    background-color: #f5ebd4;
+}
+.titproductos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+th{
+    color: white;
+    font-size: 20px;
+}
+.imgproducto{
+    width: 100px;
+    height: 100px;
+}
+.precioproducto{
+    color: #FF914D;
+    font-size: 20px;
+}.subprecio{
+    display: flex;
+    align-items: center;
+}
+.imgtrash{
+    height: 50px;
+    width: 50px;
+}
+.product{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+.itemproduct{
+    display: flex;
+    align-items: center;
+}
+.piedepagina{
+    background-color: #FFFAEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
+.parrafo_footer{
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+}
+.imginsta{
+    height: 45px;
+    width: 45px;
+}
+
+@media (max-width:750px){
+    .subpaginas{
+        width: 300px;
+    }
+}
+@media (max-width:550px){
+    .barradenavegacion{
+        gap: 10px;
+    }
+    .subpaginas{
+        width: 250px;
+        gap: 20px;
+    }
+    .logonav{
+        height: 50px;
+        width: 75px;
+    }
+    .logobuycar{
+        height: 25px;
+        width: 30px;
+    }
+}
+
+@media  (max-width:1000px) {
+    .propositos{
+        grid-template-areas:
+        "mision"
+        "vision"
+        "valores";
+    ;
+    width: 300px;
+    }
+}
+
+@media (max-width:750px) {
+    .piedepagina{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .parrafo_footer{
+        width: 350px;
+    }
+}
+@media (max-width:515px) {
+    .parrafo_footer{
+        width: 250px;
+    }
+}
+
+ /* Estilos para el carrito y tabla */
+ #cartControls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#cartControls button {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#selectedCount, #cartCount {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+#addToCartBtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#cartSummary {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    size-adjust: auto;
+    width: 80%; /* 80% del ancho de su contenedor padre */
+    padding: 1rem; /* Espaciado relativo al tamaño de fuente */
+}
+
+th {
+    background-color: #884f17;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls button {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+}
+
+.quantity-controls input {
+    width: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+
+/* Estilos para la fila del total */
+.total-row {
+    font-weight: bold;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 6px;
+    font-family: inherit;
+    background-color: #714212;
+    color: white;
+    padding: 2px 10px;
+    border: none;
+    border-radius: 7px;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    text-align: center;
+}
+
+.eliminar-producto{
+    background-color: #714212;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+}
+.eliminar-producto:hover{
+    background-color: #884f17;
+}
+.eliminar-producto:visited{
+    color: white;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #714212; /* Color del título principal */
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Tarjetas de productos */
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    max-width: 300px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    padding: 20px;
+    
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.card-text button {
+    margin: 0 10px;
+}
+
+/* Botones */
+.btn {
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.btn-outline-secondary {
+    color: #714212;
+    border-color: #714212;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #714212;
+    color: #fff;
+    border-color: #714212;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Estilo para el total del carrito */
+#totalCarrito {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #714212;
+}
+
+/* Footer */
+.piedepagina {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.piedepagina img {
+    width: 100px;
+}
+
+.parrafo_footer {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .productos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 100%; /* Tarjetas ocuparán todo el ancho en pantallas pequeñas */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card {
+        width: 45%; /* Tarjetas ocuparán casi la mitad del ancho en pantallas medianas */
+    }
+}
+
+@media (min-width: 1025px) {
+    .card {
+        width: 30%; /* Tarjetas ocuparán un tercio del ancho en pantallas grandes */
+    }
+}
+
+/* Contenedor principal: alineación de tarjetas y métodos de pago */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Estilos para las tarjetas de productos */
+.contenedor-tarjetas {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-card h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.product-card p {
+    color: #666;
+}
+
+.product-card .precio {
+    font-size: 1.25em;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.product-card button {
+    background-color: #714212;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #52300d;
+}
+
+/* Estilos del contenedor del método de pago */
+.contenedor-pago {
+    flex: 0.4;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-pago h2, .contenedor-pago h3 {
+    color: #333;
+    text-align: center;
+}
+
+/* Botón de PayPal personalizado */
+.paypal-premium-button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Estilos del botón alternativo */
+.boton-premium {
+    background-color: #714212;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.boton-premium:hover {
+    background-color: #52300d;
+    transform: translateY(-3px);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-tarjetas, .contenedor-pago {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+
+

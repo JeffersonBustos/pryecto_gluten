@@ -1,0 +1,224 @@
+body {
+    font-family: sans-serif;
+    background-color: #f5ebd4 !important;
+}
+.barradenavegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    animation-timeline: scroll();
+    animation-range: 0 200px;
+    z-index: 10;
+    background-color: #f5ebd4;
+    border-bottom: 1px solid #a05c1c;
+}
+.links{
+    text-decoration: none;
+    color: #935115;
+    justify-content: space-between;
+}
+.links:hover{
+    color: #a05c1c;
+    font-weight: bold;
+}
+.negrilla{
+    font-weight: bold;
+}
+.logobuycar{
+    height: 35px;
+    width: 40px;
+}
+.marca{
+    display: flex;
+    align-items: center;
+}
+.logonav{
+    height: 75px;
+    width: 100px;
+    object-fit:contain;
+    object-position: center;
+}
+.subpaginas{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+.primeraseccion{
+    height: 75%;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.imagenprincipal{
+    height: 375px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.segundaseccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.subtitulouno{
+    width: 400px;
+    color: #5B3309;
+    font-size: 30px;
+    text-align: center;
+    margin: 25px;
+}
+.imgsegsec{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+.subpromo{
+    color: orangered;
+    text-align: center;
+}
+.submarca{
+    color: #E8FF85;
+}
+.textmarca{
+    color: white;
+}
+.promo{
+    background-color: #f4e9cf;
+    width: 950px;
+    margin: 0 auto;
+    gap: 25px;
+    padding: 50px;
+    display: grid;
+    grid-template-areas:
+    "parteuno partedos"
+    ;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px #73410c;
+}
+.servicio{
+    margin-top: 23px;
+    height: 225px;
+    width: 225px;
+}
+.subtitulo3{
+    color: #73410c;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.p4{
+    font-size: 18px;
+}
+.vermas{
+    font-size: 18px;
+    background-color: #73410c;
+    color: white;
+    padding: 10px 43px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.vermas:hover{
+    color: white;
+    background-color: #ac6111;
+}
+.tercerasecccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+}
+.subtitulodos{
+    text-align: center;
+    color: #5B3309;
+    font-size: 30px;
+    text-align: center;
+    margin: 25px;
+}
+.carrusel{
+    margin: auto;
+    max-height: 50%;
+    max-width: 50%;
+}
+.carousel-item img {
+    max-height: 400px;
+    object-fit: contain;
+    padding: 25px;
+}
+.piedepagina{
+    background-color: #FFFAEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 30px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
+.parrafo_footer{
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+}
+.imginsta{
+    height: 45px;
+    width: 45px;
+}
+@media (max-width:750px){
+    .subpaginas{
+        width: 300px;
+    }
+}
+@media (max-width:550px){
+    .barradenavegacion{
+        gap: 10px;
+    }
+    .subpaginas{
+        width: 250px;
+        gap: 20px;
+    }
+    .logonav{
+        height: 50px;
+        width: 75px;
+    }
+    .logobuycar{
+        height: 25px;
+        width: 30px;
+    }
+}
+
+
+@media (max-width:750px) {
+    .piedepagina{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .parrafo_footer{
+        width: 350px;
+    }
+}
+@media (max-width:515px) {
+    .parrafo_footer{
+        width: 250px;
+    }
+}
+
+
+
+
+
+

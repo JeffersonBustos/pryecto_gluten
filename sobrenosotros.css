@@ -1,0 +1,200 @@
+.cuerpo{
+    background-color: #f5ebd4;
+    font-family: 'Poppins', sans-serif !important; 
+}
+.barradenavegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+    position: sticky;
+    top: 0; 
+    animation-timeline: scroll();
+    animation-range: 0 200px;
+    z-index: 10;
+    background-color: #f5ebd4;
+    border-bottom: 1px solid #a05c1c;
+}
+.marca{
+    display: flex;
+    align-items: center;
+}
+.logonav{
+    height: 75px;
+    width: 100px;
+    object-fit:contain;
+    object-position: center;
+}
+.links{
+    text-decoration: none;
+    color: #935115;
+    justify-content: space-between;
+}
+.links:hover{
+    color: #a05c1c;
+    font-weight: bold;
+}
+.negrilla{
+    font-weight: bold;
+}
+.logobuycar{
+    height: 35px;
+    width: 40px;
+}
+.subpaginas{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+.propositos{
+    max-width: 1050px;
+    margin: 0 auto;
+    gap: 47px;
+    display: grid;
+    grid-template-areas:
+    "mision vision valores"
+    ;
+    margin-top: 50px;
+}
+.proposito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7%;
+    box-shadow: 0 3px 15px #73410c;
+}
+.mision{
+    padding: 10px;
+}
+.visiom{
+    padding: 10px;
+}
+.valores{
+    padding: 10px;
+}
+.imgproposito{
+    height: 150px;
+    width: 150px;
+}
+.subtitulo{
+    font-size: 20px;
+    text-align: center;
+    color: #73410c;
+}
+.parrafo{
+    width: 245px;
+    text-align: justify;
+}
+.organigrama{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.roles{
+    height: 75%;
+    width: 75%;
+}
+.imgorganigrama{
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* Estilos pie de página*/
+.piedepagina{
+    background-color: #FFFAEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
+.parrafo_footer{
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+}
+.imginsta{
+    height: 45px;
+    width: 45px;
+}
+
+@media (max-width:750px){
+    .subpaginas{
+        width: 300px;
+    }
+    .organigrama {
+        max-width: 700px; /* Ancho máximo de 700px para pantallas más grandes */
+    }
+
+    .imgorganigrama {
+        height: 525px; /* Altura fija para pantallas más grandes */
+    }
+}
+@media (max-width:550px){
+    .barradenavegacion{
+        gap: 10px;
+    }
+    .subpaginas{
+        width: 250px;
+        gap: 20px;
+    }
+    .logonav{
+        height: 50px;
+        width: 75px;
+    }
+    .logobuycar{
+        height: 25px;
+        width: 30px;
+    }
+    .organigrama {
+        max-width: 600px; /* Ancho máximo de 700px para pantallas más grandes */
+    }
+
+    .imgorganigrama {
+        height: 425px; /* Altura fija para pantallas más grandes */
+    }
+}
+@media (max-width: 450px) {
+    .organigrama {
+        max-width: 350px; /* Ancho máximo de 700px para pantallas más grandes */
+    }
+
+    .imgorganigrama {
+        height: 300px; /* Altura fija para pantallas más grandes */
+    }    
+}
+@media  (max-width:1000px) {
+    .propositos{
+        grid-template-areas:
+        "mision"
+        "vision"
+        "valores";
+    ;
+    width: 300px;
+    }
+}
+
+@media (max-width:750px) {
+    .piedepagina{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .parrafo_footer{
+        width: 350px;
+    }
+}
+@media (max-width:515px) {
+    .parrafo_footer{
+        width: 250px;
+    }
+}
